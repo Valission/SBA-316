@@ -1,0 +1,20 @@
+.heading{
+    color: aqua;
+    width: 200px;
+    position: relative;
+}
+.heading1{
+    width: 200px;
+    text-align: center;
+    position: relative;
+    left: 45%;
+}
+#awsomeButton{
+    text-align: center;
+}
+#AButton{
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 45%;
+}
