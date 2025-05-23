@@ -21,3 +21,11 @@
 p{
     text-align: center;
 }
+#opinion{
+    border: 2px solid;
+    width: 200px;
+    margin: auto;
+}
+#centering{
+    text-align: center;
+}
