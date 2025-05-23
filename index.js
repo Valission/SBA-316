@@ -5,6 +5,8 @@ let lighting = document.getElementById('switch')
 let para = document.getElementById('para')
 let question = document.getElementById('Qpara')
 let opinion = document.getElementById('opinion')
+let form = document.getElementById('opinionForm')
+let options = document.getElementsByName('opinion')
 let darkmode = false
 
 function makeAwsome(){
@@ -35,6 +37,27 @@ function changemode(){
         darkmode = false
     }
 }
+function completeform(event) {
+    event.preventDefault();
+
+    
+    let isChecked = false;
+
+    for (let i = 0; i < options.length; i++) {
+        if (options[i].checked) {
+            isChecked = true;
+            break;
+        }
+    }
+
+    if (isChecked == false) {
+        alert("Please choose an option before submitting.");
+    } else {
+        alert("Thanks for your opinion!");
+    }
+}
+
 AButton.addEventListener('click', makeAwsome)
 heading.addEventListener('click', makeAwsomer)
 lighting.addEventListener('click',changemode)
+form.addEventListener('submit', completeform)
